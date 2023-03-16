@@ -31,7 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 #### 題目二
 /src/components/dishRecipe.vue
 
-#### 3-1 請說明 Flux, Redux, Vuex 之間的差異
+# 3-1 請說明 Flux, Redux, Vuex 之間的差異
 Flux是個設計模式，Redux/Vues都是基於他設計。
 三者都有資料唯讀性的特點，也就是資料只能被讀取不能被直接修改
 ###### Flux/Redux
@@ -39,7 +39,7 @@ Flux與Redux比較接近，在state需要被修改時會透過回傳一個新的
 ###### Vuex
 則是以mutation方式去修改state本身，而當state的值被更新，也會同步更新到畫面上。
 
-#### 3-2 請說明單向資料流與雙向資料流在處理資料更新上的異同
+# 3-2 請說明單向資料流與雙向資料流在處理資料更新上的異同
 單向資料流主要是parent->child的單向資料傳遞，vue/react中都是使用props
 方式由上到下傳遞資料。
 雙向則是 除了parent->child 還有child->parent。
@@ -51,7 +51,7 @@ Flux與Redux比較接近，在state需要被修改時會透過回傳一個新的
 在React是從parent傳遞一個callback function工child執行，在callback function中帶入要被修改的值。
 
 
-#### 3-3 這些設計主要想要解決什麼樣的問題? 優缺點為何?
+# 3-3 這些設計主要想要解決什麼樣的問題? 優缺點為何?
 ##### 3-1 state managment
 雖然如vue/React中已經有雙向資料流可以讓parent-child傳遞資料，但是當資料路徑傳遞距離太遠時，就會有管理上的困難，找尋某個資料的源頭就需要一路溯源回去變得非常沒有效率。
 使用Flux/Redux/Vuex要解決這個問題，而這些方法是透過中央管理的方式，統一管理資料狀態，
