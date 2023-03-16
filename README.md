@@ -25,10 +25,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-#### 題目一
+# 題目一
 /src/components/listComponent.vue
 
-#### 題目二
+# 題目二
 /src/components/dishRecipe.vue
 
 # 3-1 請說明 Flux, Redux, Vuex 之間的差異
